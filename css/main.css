@@ -121,7 +121,7 @@ header h2 {
 }
 
 main {
-  margin: 4rem 0;
+  margin: 0 0 4rem;
 }
 main > section {
   margin: 2rem 0 6rem;
