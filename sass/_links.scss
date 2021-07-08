@@ -2,11 +2,11 @@ $a-tags: 'a, a:active, a:hover, a:visited';
 $a-tags-hover: 'a:active, a:hover';
  
 #{$a-tags} {
-  color: var(--orange);
+  color: var(--prussian-blue);
   text-decoration: none;
   transition: all 0.2s;
 }
 #{$a-tags-hover} {
-  color: var(--prussian-blue);
+  color: var(--blue-green);
   text-decoration: underline;
 }
