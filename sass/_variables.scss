@@ -1,6 +1,7 @@
 :root {
   --base-font: 'Open Sans';
-  --header-font: 'Roboto';
+  --header-font: 'Trade Winds';
+  --roboto: 'Roboto';
 
   /* CSS HSL */
   /* https://coolors.co/8ecae6-219ebc-023047-ffb703-fb8500 */
@@ -10,6 +11,6 @@
   --honey-yellow: hsla(43, 100%, 51%, 1);
   --orange: hsla(32, 100%, 49%, 1);
 
-  --dark-color: var(--prussian-blue);
+  --dark-color: #333;
   --light-color: #eee;
 }
