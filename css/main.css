@@ -1,3 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
+:root {
+  --dark-color: #333;
+  --light-color: #eee;
+  --base-font: "Open Sans";
+  --header-font: "Roboto";
+}
+
+html {
+  font-family: var(--base-font, Helvetica, Arial, sans-serif);
+  font-size: 62.5%;
+}
+
 body {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 96rem) 1fr;
+  font-size: 1.6rem;
   margin: 0 auto;
+  place-content: center;
+}
+body > * {
+  grid-column: 2;
+  padding: 0 2rem;
+}
+
+.full-bleed {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 2rem 0;
+  text-align: center;
+  width: 100%;
+  grid-column: 1/-1;
+  padding: 4rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--header-font, Helvetica, Arial, sans-serif);
+  margin: 0 0 2rem;
+}
+
+main {
+  margin: 4rem 0;
+}
+main > section {
+  margin: 2rem 0 4rem;
 }

@@ -1,3 +1,69 @@
+@use 'variables' as v;
+@use 'functions' as f;
+@use 'mixins' as m;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+html { 
+  font-family: var(--base-font, Helvetica, Arial, sans-serif);
+  font-size: 62.5%; 
+}
+
 body {
- margin: 0 auto;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  display: grid;
+  grid-template-columns:
+  1fr
+  minmax(0, 96rem)
+  1fr;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  place-content: center;
+
+  & > * {
+    grid-column: 2;
+    padding: 0 2rem;
+  }
+}
+
+.full-bleed {
+  @include m.inverseColors;
+
+  padding: 2rem 0;
+  text-align: center;
+  width: 100%;
+  grid-column: 1 / -1;
+  padding: 4rem 0;
+}
+
+// Headings
+#{f.headings(1,6)} {
+  font-family: var(--header-font, Helvetica, Arial, sans-serif);
+  margin: 0 0 2rem;
+}
+
+// header
+
+header {
+  //
+}
+
+
+// main
+main {
+  margin: 4rem 0;
+
+  > section {
+    margin: 2rem 0 4rem;
+  }
+}
+
+// footer
+
+footer {
+  // 
 }
