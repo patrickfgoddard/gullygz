@@ -1,0 +1,20 @@
+@use 'mixins' as m;
+
+.lite {
+  font-weight: 100;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.full-bleed {
+  @include m.inverseColors;
+  @include m.blueGreenGradient;
+
+  padding: 2rem 0;
+  text-align: center;
+  width: 100%;
+  grid-column: 1 / -1;
+  padding: 4rem 0;
+}

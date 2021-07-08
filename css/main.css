@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;400&display=swap");
 :root {
   --base-font: "Open Sans";
   --header-font: "Roboto";
@@ -11,6 +11,36 @@
   --orange: hsla(32, 100%, 49%, 1);
   --dark-color: var(--prussian-blue);
   --light-color: #eee;
+}
+
+.lite {
+  font-weight: 100;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.full-bleed {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  background: linear-gradient(to bottom right, var(--dark-color) 60%, var(--blue-green));
+  padding: 2rem 0;
+  text-align: center;
+  width: 100%;
+  grid-column: 1/-1;
+  padding: 4rem 0;
+}
+
+a, a:active, a:hover, a:visited {
+  color: var(--orange);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+a:active, a:hover {
+  color: var(--prussian-blue);
+  text-decoration: underline;
 }
 
 html {
@@ -32,33 +62,15 @@ body > * {
   padding: 0 2rem;
 }
 
-a, a:active, a:hover, a:visited {
-  color: var(--orange);
-  text-decoration: none;
-  transition: all 0.2s;
-}
-
-a:active, a:hover {
-  color: var(--prussian-blue);
-  text-decoration: underline;
-}
-
-.full-bleed {
-  background-color: var(--dark-color);
-  color: var(--light-color);
-  padding: 2rem 0;
-  text-align: center;
-  width: 100%;
-  grid-column: 1/-1;
-  padding: 4rem 0;
-}
-
 h1, h2, h3, h4, h5, h6 {
   color: var(--dark-color);
   font-family: var(--header-font, Helvetica, Arial, sans-serif);
   margin: 0 0 2rem;
 }
 
+header h1 {
+  text-transform: uppercase;
+}
 header h1,
 header h2 {
   color: var(--light-color);
@@ -74,7 +86,10 @@ main > section > * {
   padding: 1rem 2rem;
 }
 main > section > h2 {
-  background-color: var(--dark-color);
+  background: linear-gradient(to bottom right, var(--dark-color) 60%, var(--blue-green));
   border-bottom: 1rem solid var(--orange);
   color: var(--light-color);
+  font-weight: 100;
+  text-transform: uppercase;
+  padding: 2rem;
 }
