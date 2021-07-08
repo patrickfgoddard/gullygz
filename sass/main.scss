@@ -30,6 +30,19 @@ body {
   }
 }
 
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+ 
+#{$a-tags} {
+  color: var(--orange);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+#{$a-tags-hover} {
+  color: var(--prussian-blue);
+  text-decoration: underline;
+}
+
 .full-bleed {
   @include m.inverseColors;
 
@@ -42,6 +55,7 @@ body {
 
 // Headings
 #{f.headings(1,6)} {
+  color: var(--dark-color);
   font-family: var(--header-font, Helvetica, Arial, sans-serif);
   margin: 0 0 2rem;
 }
@@ -49,7 +63,13 @@ body {
 // header
 
 header {
-  //
+  // background: linear-gradient(to bottom, var(--light-cornflower-blue) 0%,var(--prussian-blue) 10%);
+  // border-bottom: 1rem solid var(--orange);
+  // border-top: 2rem solid var(--light-cornflower-blue);
+  h1,
+  h2 {
+    color: var(--light-color);
+  }
 }
 
 
@@ -58,7 +78,17 @@ main {
   margin: 4rem 0;
 
   > section {
-    margin: 2rem 0 4rem;
+    margin: 2rem 0 6rem;
+
+    > * {
+      padding: 1rem 2rem;
+    }
+
+    > h2 {
+      background-color: var(--dark-color);
+      border-bottom: 1rem solid var(--orange);
+      color: var(--light-color);
+    }
   }
 }
 
