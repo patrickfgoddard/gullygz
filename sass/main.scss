@@ -45,10 +45,12 @@ body {
 header {
   padding: 4rem 0 0;
 
-  .material-icons-outlined {
+  .moon-icon {
     grid-area: icon;
     font-size: 10rem;
     text-align: right;
+    width: 100px;
+    height: 100px;
   }
     
   h1 {
@@ -64,7 +66,7 @@ header {
 
   @media screen and (min-width: 576px) {
     display: grid; 
-    grid-template-columns: min(2rem, 1fr) minmax(1fr, 10rem) minmax(1fr, 86rem) min(2rem, 1fr); 
+    grid-template-columns: 1fr 10rem auto 1fr; 
     grid-template-rows: 1fr 1fr 1fr; 
     gap: 0px 0px; 
     grid-template-areas: 

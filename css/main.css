@@ -40,29 +40,6 @@ a:active, a:hover {
   grid-column: 1/-1;
 }
 
-.material-icons-outlined {
-  font-family: "Material Icons";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-  /* Support for IE. */
-  font-feature-settings: "liga";
-}
-
 html {
   font-family: var(--base-font, Helvetica, Arial, sans-serif);
   font-size: 62.5%;
@@ -91,10 +68,12 @@ h1, h2, h3, h4, h5, h6 {
 header {
   padding: 4rem 0 0;
 }
-header .material-icons-outlined {
+header .moon-icon {
   grid-area: icon;
   font-size: 10rem;
   text-align: right;
+  width: 100px;
+  height: 100px;
 }
 header h1 {
   grid-area: h1;
@@ -108,7 +87,7 @@ header h2 {
 @media screen and (min-width: 576px) {
   header {
     display: grid;
-    grid-template-columns: min(2rem, 1fr) minmax(1fr, 10rem) minmax(1fr, 86rem) min(2rem, 1fr);
+    grid-template-columns: 1fr 10rem auto 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas: ". icon h1 ." ". icon h2 ." ". . . .";
