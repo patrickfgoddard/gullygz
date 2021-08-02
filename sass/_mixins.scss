@@ -6,8 +6,8 @@
 }
 
 @mixin inverseColors {
-  background-color: var(--dark-color);
-  color: var(--light-color);
+  background-color: var(--light-color);
+  color: var(--dark-color);
 }
 
 @mixin blueGreenGradient {
@@ -15,5 +15,5 @@
 }
 
 @mixin darkToLightGradient {
-  background: linear-gradient(to bottom, #ccc 0, #eee 50%);
+  background: linear-gradient(to bottom, #555 0, #333 50%);
 }
