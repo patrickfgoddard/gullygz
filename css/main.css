@@ -68,6 +68,7 @@ a:active, a:hover {
   font-style: italic;
   font-weight: bold;
 }
+
 html {
   font-family: var(--base-font, Helvetica, Arial, sans-serif);
   font-size: 62.5%;
@@ -76,10 +77,11 @@ html {
 body {
   background-color: var(--dark-color);
   color: var(--light-color);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin: 0 auto;
   place-content: center;
 }
+
 h1, h2, h3, h4, h5, h6 {
   color: var(--light-color);
   font-family: var(--header-font, cursive);
@@ -97,7 +99,7 @@ header #logo {
   width: 100%;
 }
 header h1 {
-  font-size: 1.2rem;
+  font-size: 2rem;
   padding: 0;
   grid-area: h1;
   text-align: center;
@@ -149,6 +151,10 @@ main > section > h2 {
 main > section img {
   height: 100%;
   max-width: 100%;
+}
+main > section p {
+  line-height: 1.75;
+  margin: 3rem 0;
 }
 
 footer {

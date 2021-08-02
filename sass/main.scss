@@ -17,20 +17,9 @@ html {
 body {
   background-color: var(--dark-color);
   color: var(--light-color);
-  // display: grid;
-  // grid-template-columns:
-  // 1fr
-  // minmax(0, 96rem)
-  // 1fr;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin: 0 auto;
   place-content: center;
-
-
-  & > * {
-    // grid-column: 2;
-    // padding: 0 2rem;
-  }
 }
 
 // Headings
@@ -42,7 +31,6 @@ body {
 }
 
 // header
-
 header {
   padding: 4rem 2rem 0;
   text-align: center;
@@ -54,8 +42,7 @@ header {
   }
     
   h1 {
-    // font-size: 250%;
-    font-size: 1.2rem;
+    font-size: 2rem;
     padding: 0;
     grid-area: h1;
     text-align: center;
@@ -117,6 +104,11 @@ main {
     img {
       height: 100%;
       max-width: 100%;
+    }
+
+    p {
+      line-height: 1.75;
+      margin: 3rem 0;
     }
   }
 }
