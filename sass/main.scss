@@ -78,9 +78,9 @@ main {
   > section {
     display: grid;
     grid-template-columns:
-      1fr
+      minmax(2rem, 1fr)
       minmax(0, 96rem)
-      1fr;
+      minmax(2rem, 1fr);
     padding: 6rem 0;
 
     &:nth-child(odd) {
@@ -94,7 +94,6 @@ main {
     }
 
     > * {
-      // padding: 1rem 2rem;
       grid-column: 2/3;
     }
 
@@ -109,9 +108,13 @@ main {
       text-transform: uppercase;
       padding: 0 0 0.5rem;
       margin: 0;
+
+      background: linear-gradient(45deg, var(--light-color), #999 30%);
+      background-clip: text;
+      -webkit-background-clip: text;  -moz-background-clip: text;  -moz-text-fill-color: transparent;  -webkit-text-fill-color: transparent;
     }
 
-    image {
+    img {
       height: 100%;
       max-width: 100%;
     }
