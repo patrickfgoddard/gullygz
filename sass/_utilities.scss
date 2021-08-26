@@ -9,8 +9,7 @@
 }
 
 .full-bleed {
-  @include m.darkToLightGradient;
-
+  // @include m.darkToLightGradient;
   text-align: center;
   width: 100%;
   grid-column: 1 / -1;
