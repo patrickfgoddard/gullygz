@@ -94,7 +94,7 @@ button {
 
 form {
   max-width: 60rem;
-  
+
   label,
   input,
   textarea {
@@ -112,6 +112,31 @@ form {
 
   label {
     font-weight: bold;
+  }
+}
+
+.inline-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.follow {
+  margin-left: 2.5rem;
+  
+  svg {
+    fill: var(--orange);
+    width: 2rem;
+    height: 3rem;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
 }
 
