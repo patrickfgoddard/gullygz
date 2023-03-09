@@ -126,7 +126,7 @@ form {
 
 .follow {
   margin-left: 2.5rem;
-  
+
   svg {
     fill: var(--orange);
     width: 2rem;
@@ -138,6 +138,11 @@ form {
     align-items: center;
     gap: 1rem;
   }
+}
+
+footer {
+  padding: 4rem 2rem;
+  text-align: center;
 }
 
 @import 'sections';
