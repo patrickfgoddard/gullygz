@@ -1,6 +1,8 @@
 section {
   > *:not(h2) {
-    margin-inline: 2.5rem;
+    @media only screen and (min-width: 560px) {
+      margin-inline: 2.5rem;
+    }
   }
 
   ul li {
@@ -32,8 +34,6 @@ section {
     }  
   }
 }
-
-
 
 // Specific sections
 .intro {
