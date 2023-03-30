@@ -75,6 +75,48 @@ section {
 }
 
 .video {
+  .youtube-video-place {
+    display: flex;
+    place-content: center;
+
+    figure {      
+      max-width: 64rem;
+      width: 100%;
+    }
+
+    .img-wrap {
+      position: relative;
+
+      &::after {
+        background-image: url("data:image/svg+xml,%3Csvg height='800' width='800' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' xml:space='preserve'%3E%3Cg fill='%23fff'%3E%3Cpath d='M46.014 31.105 25.197 20.697a1.003 1.003 0 0 0-1.447.895v20.816a1 1 0 0 0 1.447.895l20.817-10.408a1 1 0 0 0 0-1.79zM25.75 40.79V23.21L43.33 32l-17.58 8.79z'/%3E%3Cpath d='M32 0C14.327 0 0 14.327 0 32s14.327 32 32 32 32-14.327 32-32S49.673 0 32 0zm0 62C15.458 62 2 48.542 2 32S15.458 2 32 2s30 13.458 30 30-13.458 30-30 30z'/%3E%3C/g%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 30%;
+        background-position: center center;
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+    }
+
+    img {
+      aspect-ratio: 4 / 3;
+      width: 100%;
+      height: auto;
+    }
+
+    figcaption {
+      padding: 1rem;
+      font-size: 90%;
+      font-style: italic;
+    }
+  }
+
+
   iframe {
     aspect-ratio: 16 / 9;
     height: 100%;
